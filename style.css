@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* font-family: 'Young Serif', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+
+html {
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+:root {
+    /*Primary Colors*/
+    --nutmeg: hsl(14, 45%, 36%);
+    --eggshell: hsla(332, 51%, 32%, 0.1);
+
+    /*Neutral Colors*/
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--eggshell);
+    display: grid;
+    place-items: center;
+}
+
+h1, h2 {
+    font-family: 'Young Serif', serif;
+}
+
+h2, td:nth-child(2) {
+    color: var(--nutmeg);
+}
+
+h3 {
+    color: var(--dark-raspberry);
+}
+
+p {
+    line-height: 2.5rem;
+}
+
+p, li, td:first-child {
+    color: var(--wenge-brown)
+}
+
+ul {
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+
+li {
+    margin-left: 2rem;
+    padding-left: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.darker {
+    font-weight: 700;
+}
+
+h2,
+#recipe-title, #recipe-description, #recipe-preparation, #recipe-ingredients, hr, #recipe-instructions {
+    margin-bottom: 2.5rem;
+}
+
+#recipe {
+    max-width: 375px;
+    margin: 3.5rem 0;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+#recipe-img img {
+    width: 100%;
+    display: block;
+}
+
+.text-container {
+    padding: 3.5rem 3.2rem;
+}
+
+#recipe-title {
+    color: var(--dark-charcoal);
+    font-size: 3.2rem;
+}
+
+#recipe-preparation {
+    background-color: var(--rose-white);
+    padding: 1.5rem 2rem;
+}
+
+#recipe-preparation h3 {
+    margin-bottom: 10px;
+}
+
+#recipe-instructions ul {
+    list-style-type: decimal;
+}
+
+#recipe-nutrition p {
+    margin-bottom: 2rem;
+}
+
+#recipe-nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#recipe-nutrition tr:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+#recipe-nutrition td:not(:last-child) {
+    padding: 15px 0;
+}
+
+#recipe-nutrition td:first-child {
+    width: 50%;
+    padding-left: 3rem;
+}
+
+@media (min-width: 1440px) {
+    #recipe {
+        max-width: 730px;
+    }
+
+    .text-container{
+        padding: 0;
+    }
+
+    #recipe-img{
+        margin-bottom: 2.5rem;
+    }
+}
